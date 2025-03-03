@@ -18,38 +18,48 @@ pip install -r requirements.txt
 ```
 
 ## Usage 
+Each module includes example cases that demonstrate basic functionality:
+```
+# Run Branch and Bound example with the sequences in the instructions below:
+python -m code.branch_and_bound
+
+# Run Gibbs Sampling example with the sequences in the instructions below:
+python -m code.gibbs_sampling
+```
+
 ```python
+# Example: Perform Branch and Bound Algorithm
 from codes.branch_and_bound import branch_and_bound
 
-#Example sequences
-seqs = "ATGGTCGC TTGTCTGA CCGTAGTA".split()
+# Example sequences
+seqs = "ATGGTCGC TTGTCTGA CCGTAGTA"
 
-#Parameters
+# Parameters
 tam_motif = 3
 num_seqs = len(seqs)
 
-
-#Run Branch & Bounch algorithm
+# Run Branch & Bounch algorithm
 best_motif, best_score = branch_and_bound(seqs, num_seqs, motif_size)
 
-#Print results
+# Print results
 print("Best motif positions:", best_motif)
 print("Best score found:", best_score)
 ```
 
 ```python
+# Example: Perform Gibbs Sampling Algorithm
 from codes.gibbs_sampling import gibbs_sampler
 
-#Example sequences
+# Example sequences
 seqs = "GTAAACAATATTTATAGC AAAATTTACCTCGCAAGG CCGTACTGTCAAGCGTGG TGAGTAAACGACGTCCCA TACTTAACACCCTGTCAA"
 
-#Parameter (Motif lenght)
+# Parameter (Motif lenght)
 k = 8
 
-#Run Gibbs Sampling algorithm
+# Run Gibbs Sampling algorithm
 best_motifs, best_positions, best_score = gibbs_sampler(seqs, k)
 
-#Print results
+# Print results
 print(f"Termination criterion reached after {iteration + 1} iterations.")
 print(f"Sequence {i + 1}: Position {pos}, Motif: {motif}")
 print("Best Score:", best_score)
@@ -60,8 +70,10 @@ print("Best Score:", best_score)
 The project includes comprehensive unit tests in the tests folder. To run the tests:
 
 ```bash
-python -m unittest discover tests
+# Run all tests
+python -m unittest discover -s tests
 
+# Run specific test files
 python -m unittest tests/tests_branch_and_bound.py
 python -m unittest tests/tests_gibbs_sampling.py
 
@@ -81,4 +93,6 @@ python -m unittest tests/tests_gibbs_sampling.py
 -  [Elidiane Rosário](https://github.com/ely-24)
 -  [Karolina Barbosa](https://github.com/klopesb)
 -  [Vanessa Rodriguez](https://github.com/VaneBR)
-  
+
+## License
+This project is open source and available under the MIT License.
