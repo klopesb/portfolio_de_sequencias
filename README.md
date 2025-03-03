@@ -19,7 +19,7 @@ pip install -r requirements.txt
 
 ## Usage 
 Each module includes example cases that demonstrate basic functionality:
-```
+```python
 # Run Branch and Bound example with the sequences in the instructions below:
 python -m code.branch_and_bound
 
