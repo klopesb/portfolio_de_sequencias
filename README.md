@@ -22,26 +22,26 @@ pip install -r requirements.txt
 from codes.branch_and_bound import branch_and_bound
 
 #Example sequences
-seqs = ["ATGGTCGC", "TTGTCTGA", "CCGTAGTA"]
+seqs = "ATGGTCGC TTGTCTGA CCGTAGTA".split()
 
-# Parâmetros
-num_seqs = len(seqs)
+#Parâmetros
 tam_motif = 3
+num_seqs = len(seqs)
+
 
 #Run Branch & Bounch algorithm
-melhor_motif, score_melhor = branch_and_bound(seqs, num_seqs, tam_motif)
+best_motif, best_score = branch_and_bound(seqs, num_seqs, motif_size)
 
 #Print results
-print("Best motif:", melhor_motif)
-print("Best score:", score_melhor)
-
+print("Best motif positions:", best_motif)
+print("Best score found:", best_score)
 ```
 
 ```python
 from codes.gibbs_sampling import gibbs_sampler
 
 #Example sequences
-seqs = ["GTAAACAATATTTATAGC", "AAAATTTACCTCGCAAGG", "CCGTACTGTCAAGCGTGG", "TGAGTAAACGACGTCCCA", "TACTTAACACCCTGTCAA"]
+seqs = "GTAAACAATATTTATAGC AAAATTTACCTCGCAAGG CCGTACTGTCAAGCGTGG TGAGTAAACGACGTCCCA TACTTAACACCCTGTCAA"
 
 #Parameter (Motif lenght)
 k = 8
@@ -50,8 +50,8 @@ k = 8
 best_motifs, best_positions, best_score = gibbs_sampler(seqs, k)
 
 #Print results
-print("Best Motifs:", best_motifs)
-print("Best Positions:", best_positions)
+print(f"Termination criterion reached after {iteration + 1} iterations.")
+print(f"Sequence {i + 1}: Position {pos}, Motif: {motif}")
 print("Best Score:", best_score)
 
 ```
@@ -62,14 +62,13 @@ The project includes comprehensive unit tests in the tests folder. To run the te
 ```bash
 python -m unittest discover tests
 
-python -m unittest tests/branch_and_bound_test.py
-python -m unittest tests/gibbs_sampling_tests.py
+python -m unittest tests/tests_branch_and_bound.py
+python -m unittest tests/tests_gibbs_sampling.py
 
 ```
 
 ## Dependencies 
 - Python 3.x
-- NumPy
 - Collections
 - Random
 - Unittest
