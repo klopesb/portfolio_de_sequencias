@@ -7,8 +7,8 @@ A suite of Python tools for biological sequence analysis, featuring:
     - Branch and Bound
     - Gibbs Sampling
 
-  ## Installation
-  Clone the repository and install dependencies:
+## Installation
+Clone the repository and install dependencies:
 
 ```bash
 git clone https://github.com/klopesb/portfolio_de_sequencias.git
