@@ -34,7 +34,7 @@ from codes.branch_and_bound import branch_and_bound
 # Example sequences
 seqs = "ATGGTCGC TTGTCTGA CCGTAGTA"
 
-# Parameters
+# Parameters (Motif lenght, number of sequences)
 tam_motif = 3
 num_seqs = len(seqs)
 
@@ -53,8 +53,9 @@ from codes.gibbs_sampling import gibbs_sampler
 # Example sequences
 seqs = "GTAAACAATATTTATAGC AAAATTTACCTCGCAAGG CCGTACTGTCAAGCGTGG TGAGTAAACGACGTCCCA TACTTAACACCCTGTCAA"
 
-# Parameter (Motif lenght)
+# Parameters (Motif lenght, number of sequences)
 k = 8
+num_seqs = len(sequences)
 
 # Run Gibbs Sampling algorithm
 best_motifs, best_positions, best_score = gibbs_sampler(seqs, k)
