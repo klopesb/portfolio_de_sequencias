@@ -17,7 +17,7 @@ git clone https://github.com/klopesb/portfolio_de_sequencias.git
 pip install -r requirements.txt
 ```
 
-## Usage 
+## Usage
 Each module includes example cases that demonstrate basic functionality:
 ```python
 # Run Branch and Bound example with the sequences in the instructions below:
@@ -26,7 +26,7 @@ python -m code.branch_and_bound
 # Run Gibbs Sampling example with the sequences in the instructions below:
 python -m code.gibbs_sampling
 ```
-
+For actual use in your code, import the modules and use their functions:
 ```python
 # Example: Perform Branch and Bound Algorithm
 from codes.branch_and_bound import branch_and_bound
