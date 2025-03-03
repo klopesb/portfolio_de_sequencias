@@ -24,7 +24,7 @@ from codes.branch_and_bound import branch_and_bound
 #Example sequences
 seqs = "ATGGTCGC TTGTCTGA CCGTAGTA".split()
 
-#Parâmetros
+#Parameters
 tam_motif = 3
 num_seqs = len(seqs)
 
