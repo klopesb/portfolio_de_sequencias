@@ -20,9 +20,7 @@ The Branch and Bound algorithm is a combinatorial optimization technique used to
 ### 💡Advantages and Disadvantages
 
     ✅ Guarantees the best possible solution.
-
     ✅ Efficient pruning avoids unnecessary computations.
-
     ❌ Computationally expensive for large datasets.
 
 ### 📌 2. Gibbs Sampling Algorithm
@@ -39,9 +37,7 @@ Gibbs Sampling is a probabilistic approach to motif discovery. It is particularl
 ### 💡Advantages and Disadvantages
 
     ✅ Works well for large datasets.
-
     ✅ Can escape local optima due to its stochastic nature.
-
     ❌ May not always find the globally optimal solution.
 
 
