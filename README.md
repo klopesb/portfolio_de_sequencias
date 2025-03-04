@@ -10,23 +10,23 @@ Motif discovery is a fundamental task in bioinformatics used to identify recurri
 
 ## ⚡Features
 ### 📌 1. Branch and Bound Algorithm
-### 📖 Overview
+#### 📖 Overview
 The Branch and Bound algorithm is a combinatorial optimization technique used to efficiently search for the best motif. Instead of exhaustively checking all possible motif positions, it prunes unnecessary search branches based on upper-bound estimates of potential scores.
-### 🔍How It Works
+#### 🔍How It Works
     - Uses a recursive approach to explore motif positions across sequences.
     - Prunes search paths when they are guaranteed to not yield better results than the best found so far.
     - Returns the optimal motif positions with the highest score.
 
-### 💡Advantages and Disadvantages
+#### 💡Advantages and Disadvantages
 
     ✅ Guarantees the best possible solution.
     ✅ Efficient pruning avoids unnecessary computations.
     ❌ Computationally expensive for large datasets.
 
 ### 📌 2. Gibbs Sampling Algorithm
-### 📖 Overview
+#### 📖 Overview
 Gibbs Sampling is a probabilistic approach to motif discovery. It is particularly useful when dealing with large datasets, as it provides a fast and flexible way to identify motifs without exhaustively searching all possibilities.
-### 🔍How It Works
+#### 🔍How It Works
     - Randomly selects initial motif positions from sequences.
     - Iteratively refines the motif set by:
         - Removing one sequence at a time.
@@ -34,7 +34,7 @@ Gibbs Sampling is a probabilistic approach to motif discovery. It is particularl
         - Sampling a new motif for the removed sequence using the profile.
     - Repeats until convergence (or after a set number of iterations).
 
-### 💡Advantages and Disadvantages
+#### 💡Advantages and Disadvantages
 
     ✅ Works well for large datasets.
     ✅ Can escape local optima due to its stochastic nature.
