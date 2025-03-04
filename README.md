@@ -55,7 +55,7 @@ git clone https://github.com/klopesb/portfolio_de_sequencias.git
 pip install -r requirements.txt
 ```
 
-## 🚀 Usage
+## 🖥️ Usage
 Each module includes example cases that demonstrate basic functionality:
 ```python
 # Run Branch and Bound example with the sequences in the instructions below:
@@ -105,7 +105,7 @@ print("Best Score:", best_score)
 
 ```
 
-## 📝 Running Tests
+## 🔄 Running Tests
 The project includes comprehensive unit tests in the tests folder. To run the tests:
 
 ```bash
@@ -118,14 +118,14 @@ python -m unittest tests/tests_gibbs_sampling.py
 
 ```
 
-## 🔧 Dependencies 
+## ⚙️ Dependencies 
 - Python 3.x
 - Collections
 - Random
 - Unittest
 
 
-## 🎯 Contribution
+## 📝 Contribution
 -  [Cátia Rosário](https://github.com/bluecanguru)
 -  [Elidiane Rosário](https://github.com/ely-24)
 -  [Karolina Barbosa](https://github.com/klopesb)
