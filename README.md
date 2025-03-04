@@ -3,7 +3,7 @@
 ## Introduction
 Motif discovery is a fundamental task in bioinformatics used to identify recurring patterns in DNA, RNA, or protein sequences. These motifs often play crucial roles in gene regulation, transcription factor binding, and evolutionary analysis.
 
-This repository provides two algorithms for motif discovery:
+### This repository provides two algorithms for motif discovery:
 
     - Branch and Bound Algorithm – A deterministic approach that efficiently finds the optimal motif.
     - Gibbs Sampling Algorithm – A probabilistic method used to discover motifs in a flexible and iterative manner.
