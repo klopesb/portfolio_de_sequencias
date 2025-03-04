@@ -18,6 +18,7 @@ The Branch and Bound algorithm is a combinatorial optimization technique used to
     - Returns the optimal motif positions with the highest score.
 
 ##### Advantages and Disadvantages
+
 ✅ Guarantees the best possible solution.
 
 ✅ Efficient pruning avoids unnecessary computations.
@@ -36,6 +37,7 @@ Gibbs Sampling is a probabilistic approach to motif discovery. It is particularl
     - Repeats until convergence (or after a set number of iterations).
 
 ##### Advantages and Disadvantages
+
 ✅ Works well for large datasets.
 
 ✅ Can escape local optima due to its stochastic nature.
