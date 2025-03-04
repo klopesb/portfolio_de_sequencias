@@ -1,6 +1,6 @@
 # Bioinformatics Sequence Analysis Toolkit
 ### A suite of Python tools for biological sequence analysis and Motif Discovery
-## 🔬 Introduction
+## 🧬 Introduction
 Motif discovery is a fundamental task in bioinformatics used to identify recurring patterns in DNA, RNA, or protein sequences. These motifs often play crucial roles in gene regulation, transcription factor binding, and evolutionary analysis.
 
 ### This repository provides two algorithms for motif discovery:
