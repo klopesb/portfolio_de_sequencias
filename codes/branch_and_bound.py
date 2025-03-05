@@ -30,10 +30,10 @@ def branch_and_bound(seqs, num_seqs, motif_size, partial_pos=[], level=0, max_sc
     if level == num_seqs:
         motifs = [s[p:p+motif_size] for p, s in zip(partial_pos, seqs)]
         
-        current_score = sum(max(col.count(base) for base in set(col)) for col in zip(*motifs))
+        current_score = sum(max(col.count(base) for base in set(col)) for col in zip(*motifs)) #total alignment score
         return partial_pos, current_score
 
-    best_pos, best_score = None, max_score
+    best_pos, best_score = None, max_score #stores the best motif positions and highest score found 
 
     #Iterate over all possible positions for the current level
     for pos in range(len(seqs[level]) - motif_size + 1):
