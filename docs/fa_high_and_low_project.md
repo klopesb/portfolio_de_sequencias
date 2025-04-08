@@ -95,9 +95,3 @@ Its main goal is to provide simple and efficient pattern detection with minimal 
 ### 2. **Performance Testing**
 - Measure execution time on **long sequences (`>1000 characters`)**.
 - Ensure **memory efficiency** for large pattern sets.
-
----
-
-## 📌 Final Notes
-This project provides a **deterministic finite automaton (DFA) implementation**, offering **simplicity and efficiency** for basic pattern detection.  
-Future improvements could include **more advanced matching techniques** for faster or more complex searches.
