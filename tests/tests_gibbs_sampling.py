@@ -1,7 +1,7 @@
 import unittest
 import random
 
-# Supondo que seu código está em um arquivo chamado motif_finder.py
+
 from gibbs_sampling import (
     inicializar_posicoes_aleatorias,
     construir_pwm,
