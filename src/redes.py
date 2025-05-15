@@ -89,7 +89,6 @@ def solve_exercise():
     print(f"\n Comprimento médio dos caminhos mais curtos <L>: {l_mean:.2f}")
     print(f"Fração de pares alcançáveis: {reach_frac:.2%}")
 
-# Run the analysis
 if __name__ == "__main__":
     solve_exercise()
 
