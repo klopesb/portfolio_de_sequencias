@@ -74,7 +74,7 @@ def solve_exercise():
     net.load_from_file("ecoli.txt")
 
     print(f"\n Grau médio <k>: {net.mean_degree():.2f}")
-    print("Top 5 nós com maior grau:")
+    print("Top 10 nós com maior grau:")
     for node, val in net.highest_degrees(top=10):
         print(f"  {node}: grau = {val}")
 
